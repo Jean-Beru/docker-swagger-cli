@@ -14,7 +14,7 @@ docker run --rm jeanberu/swagger-cli
 Validate schema from URL or a file.
 ```shell script
 docker run --rm jeanberu/swagger-cli swagger-cli validate YOUR_URL
-docker run --rm jeanberu/swagger-cli swagger-cli validate YOUR_FILE
+docker run --rm -v $PWD/YOUR_FILE.yaml:/swagger.yaml jeanberu/swagger-cli swagger-cli validate swagger.yaml
 ```
 
 ## More help ?
